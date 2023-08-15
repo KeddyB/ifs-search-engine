@@ -124,9 +124,27 @@ h1{
       height: 3rem;
       width: 15rem;
       left: -1.3rem;
-      background: transparent;
       color: white;
       font-size: 1rem;
-      resize: none;
+   }
+}
+@media (max-width: 550px){
+   .header{
+      left: 45%;
+   }
+   h1{
+      font-size: 40px;
+      font-weight: 400;
+      padding: 0 0 1.5rem;
+   }
+   .container{
+      width: 25rem;
+      height: 2.5rem;
+   }
+   .text{
+      height: 2.4rem;
+      width: 13rem;
+      left: -1.3rem;
+      font-size: 1rem;
    }
 }
