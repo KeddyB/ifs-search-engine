@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   border: none;
+   outline: none;
+   font-family: 'poppins';
+   transition: 0.5s ease;
+}
+body{
+   background-color: rgb(7, 15, 20);
+   color: white;
+}
+.header{
+   position: fixed;
+   top: 0;
+   left: 70%;
+   width: 100%;
+   padding: 2rem 15%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+}
+.body{
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -90%);
+   text-align: center;
+}
+nav a{
+   text-decoration: none;
+   color: white;
+   margin-left: 1rem;
+}
+h1{
+   width: 100%;
+   font-size: 70px;
+   font-weight: 600;
+   padding: 0 0 3rem;
+}
+.container{
+   display: inline-block;
+   justify-content: space-between;
+   background: transparent;
+   border: .05rem solid white;
+   border-radius: 5rem;
+   width: 42rem;
+   height: 3.2rem;
+}
+.container:hover{
+   border: none;
+   box-shadow: 0 0 1rem white;
+   transition: .5 ease-in-out;
+   background: rgb(50, 60, 82);
+}
+.text{
+   position: relative;
+   height: 49px;
+   width: 30rem;
+   left: -1.3rem;
+   background: transparent;
+   color: white;
+   font-size: 1rem;
+   resize: none;
+}
+.bx-search{
+   position: relative;
+   left: -2.2rem;
+   top: .15rem;
+}
+.bx-microphone{
+   position: relative;
+   top: .15rem;
+   left: 1rem;
+}
+.bx-camera{
+   position: relative;
+   top: .15rem;
+   left: 2.2rem;
+}
+.btn{
+   padding: .6rem .8rem .6rem;
+   border: none;
+   border-radius: 4px;
+   font-size: 15px;
+   color: white;
+   background: rgb(7, 20, 32);
+   margin-top: 2rem;
+   outline: none;
+
+}
+.btn:hover{
+   border: 1px solid white;
+}
+
+/* responsive design */
+@media (max-width: 1000px){
+   .header{
+      left: 65%;
+   }
+}
+@media (max-width: 750px){
+   .header{
+      left: 52%;
+   }
+   h1{
+      font-size: 50px;
+      font-weight: 500;
+      padding: 0 0 1.5rem;
+   }
+   .container{
+      width: 27rem;
+      height: 3rem;
+   }
+   .text{
+      position: relative;
+      height: 3rem;
+      width: 15rem;
+      left: -1.3rem;
+      background: transparent;
+      color: white;
+      font-size: 1rem;
+      resize: none;
+   }
+}
