@@ -94,7 +94,6 @@ h1{
    background: rgb(7, 20, 32);
    margin-top: 2rem;
    outline: none;
-
 }
 .btn:hover{
    border: 1px solid white;
@@ -146,5 +145,36 @@ h1{
       width: 14rem;
       left: -1.3rem;
       font-size: 1rem;
+   }
+   .btn{
+      padding: .3rem .5rem .3rem;
+      border-radius: 2px;
+      font-size: 12px;
+      outline: none;
+   }
+}
+@media (max-width: 468px) {
+   .header{
+      left: 40%;
+   }
+   h1{
+      font-size: 33px;
+      padding: 0 0 .5rem;
+   }
+   .container{
+      width: 20rem;
+      height: 2.5rem;
+   }
+   .text{
+      height: 2.4rem;
+      width: 10rem;
+      left: -1.3rem;
+      font-size: .7rem;
+   }
+   .btn{
+      padding: .3rem .5rem .3rem;
+      border-radius: 2px;
+      font-size: 12px;
+      outline: none;
    }
 }
