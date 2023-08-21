@@ -53,9 +53,24 @@ if(SpeechRecognition){
       }
       recognition.addEventListener("result", resultSpeechRecognition);
       function resultSpeechRecognition(e){
-         console.log(e)
+         const currentResultIndex = e.resultIndex
          const transcript = e.results[0][0].transcript;
-         text.value = transcript
+
+         if(transcript.toLowerCase().trim()==="stop recording"){
+            recognition.stop()
+         }else if(!text.value){
+            text.value = transcript
+         }else{
+            if(transcript.toLowerCase().trim()==="go"){
+               searchQuery()
+            }
+            else if(transcript.toLowerCase().trim()==="reset input"){
+               text.value = ""
+            }
+            else{
+               text.value = transcript
+            }
+         }
          setTimeout(()=>{
             searchQuery()
          }, 750)
