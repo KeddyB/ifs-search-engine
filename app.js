@@ -56,24 +56,24 @@ if(SpeechRecognition){
          const currentResultIndex = e.resultIndex
          const transcript = e.results[currentResultIndex][0].transcript;
 
-         if(transcript.toLowerCase().trim()==="stop recording"){
-            recognition.stop()
-         }else if(!text.value){
-            text.value = transcript
-         }else{
-            if(transcript.toLowerCase().trim()==="go"){
-               searchQuery()
-            }
-            else if(transcript.toLowerCase().trim()==="reset input"){
-               text.value = ""
-            }
-            else{
-               text.value = transcript
-            }
-         }
-         // setTimeout(()=>{
-         //    searchQuery()
-         // }, 750)
+         // if(transcript.toLowerCase().trim()==="stop recording"){
+         //    recognition.stop()
+         // }else if(!text.value){
+         //    text.value = transcript
+         // }else{
+         //    if(transcript.toLowerCase().trim()==="go"){
+         //       searchQuery()
+         //    }
+         //    else if(transcript.toLowerCase().trim()==="reset input"){
+         //       text.value = ""
+         //    }
+         //    else{
+         //       text.value = transcript
+         //    }
+         // }
+         setTimeout(()=>{
+            searchQuery()
+         }, 750)
       }
    }
 }else{
