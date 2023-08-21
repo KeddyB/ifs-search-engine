@@ -28,6 +28,7 @@ if(SpeechRecognition){
    const micIcon = micBtn.querySelector(".bx")
 
    const recognition = new SpeechRecognition()
+   // recognition.continuous = true
    
    micBtn.addEventListener("click", micBtnClick)
    function micBtnClick(){
@@ -51,6 +52,8 @@ if(SpeechRecognition){
       recognition.addEventListener("result", resultSpeechRecognition);
       function resultSpeechRecognition(e){
          console.log(e)
+         const transcript = e.results[0][0].transcript;
+         text.value = transcript
       }
    }
 }else{
