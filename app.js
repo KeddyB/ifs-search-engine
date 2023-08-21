@@ -57,7 +57,7 @@ if(SpeechRecognition){
          const transcript = e.results[0][0].transcript;
          text.value = transcript
          setTimeout(()=>{
-            text.submit()
+            searchQuery()
          }, 750)
       }
    }
