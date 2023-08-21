@@ -54,7 +54,7 @@ if(SpeechRecognition){
       recognition.addEventListener("result", resultSpeechRecognition);
       function resultSpeechRecognition(e){
          const currentResultIndex = e.resultIndex
-         const transcript = e.results[0][0].transcript;
+         const transcript = e.results[currentResultIndex][0].transcript;
 
          if(transcript.toLowerCase().trim()==="stop recording"){
             recognition.stop()
