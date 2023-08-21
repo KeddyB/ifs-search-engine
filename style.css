@@ -172,8 +172,6 @@ h1{
 @media (max-width: 468px) {
    .header{
       left: 47%;
-   }
-   .header{
       font-size: .8rem;
    }
    h1{
