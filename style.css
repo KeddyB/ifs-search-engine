@@ -77,10 +77,10 @@ h1{
    left: -2.2rem;
    top: .15rem;
 }
-.bx-microphone{
+.bx-microphone, .bx-microphone-off{
    position: relative;
    top: .15rem;
-   left: 1rem;
+   left: -2rem;
 }
 .bx-camera{
    position: relative;
