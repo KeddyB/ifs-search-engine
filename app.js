@@ -41,12 +41,14 @@ if(SpeechRecognition){
       function startSpeechRecognition(){
          micIcon.classList.remove("bx-microphone")
          micIcon.classList.add("bx-microphone-off")
+         text.focus()
          console.log("speech active")
       }
       recognition.addEventListener("end", endSpeechRecognition);
       function endSpeechRecognition(){
          micIcon.classList.remove("bx-microphone-off")
          micIcon.classList.add("bx-microphone")
+         text.focus();
          console.log("speech inactive")
       }
       recognition.addEventListener("result", resultSpeechRecognition);
@@ -54,6 +56,9 @@ if(SpeechRecognition){
          console.log(e)
          const transcript = e.results[0][0].transcript;
          text.value = transcript
+         setTimeout(()=>{
+            text.submit()
+         }, 750)
       }
    }
 }else{
