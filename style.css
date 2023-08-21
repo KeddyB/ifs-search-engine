@@ -80,12 +80,7 @@ h1{
 .bx-microphone, .bx-microphone-off{
    position: relative;
    top: .15rem;
-   left: -2rem;
-}
-.bx-camera{
-   position: relative;
-   top: .15rem;
-   left: 2.2rem;
+   left: 2.3rem;
 }
 .btn{
    padding: .6rem .8rem .6rem;
@@ -176,7 +171,10 @@ h1{
 }
 @media (max-width: 468px) {
    .header{
-      left: 40%;
+      left: 47%;
+   }
+   .header{
+      font-size: .8rem;
    }
    h1{
       font-size: 33px;
