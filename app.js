@@ -71,9 +71,9 @@ if(SpeechRecognition){
                text.value = transcript
             }
          }
-         setTimeout(()=>{
-            searchQuery()
-         }, 750)
+         // setTimeout(()=>{
+         //    searchQuery()
+         // }, 750)
       }
    }
 }else{
