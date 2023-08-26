@@ -1,4 +1,3 @@
-
 let text = document.querySelector(".text")
 let btn = document.querySelector(".btn")
 
@@ -14,9 +13,7 @@ function searchQuery(){
    window.open(url)
 }
 
-
 //->> Save search history
-
 function saveHistory() {
    // Get the texts from the input field.
    var texts = document.getElementById("Query").value;
@@ -65,8 +62,6 @@ function saveHistory() {
 }
 
 //End of search history
-
-
 
 
 window.addEventListener("keydown", (e)=>{

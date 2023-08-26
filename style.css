@@ -26,12 +26,7 @@ body{
    z-index: 100;
 }
 .body{
-   margin: 0;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   -ms-transform: translate(-50%, -50%);
-   transform: translate(-50%, -90%);
+   margin: 10%;
    text-align: center;
 }
 a{
@@ -119,6 +114,9 @@ h1{
    }
 }
 @media (max-width: 750px){
+   .body{
+      margin: 20% 0 0;
+   }
    .header{
       left: 52%;
    }
@@ -141,6 +139,9 @@ h1{
    }
 }
 @media (max-width: 550px){
+   .body{
+      margin: 35% 0 0 0;
+   }
    .header{
       left: 45%;
    }
