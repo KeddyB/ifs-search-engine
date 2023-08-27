@@ -26,12 +26,7 @@ body{
    z-index: 100;
 }
 .body{
-   margin: 0;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   -ms-transform: translate(-50%, -50%);
-   transform: translate(-50%, -90%);
+   margin: 10%;
    text-align: center;
 }
 a{
@@ -47,6 +42,9 @@ h1{
    font-weight: 600;
    padding: 0 0 3rem;
 }
+h3{
+  margin-top: 2rem;
+}
 .container{
    display: inline-block;
    justify-content: space-between;
@@ -55,6 +53,7 @@ h1{
    border-radius: 5rem;
    width: 42rem;
    height: 3.2rem;
+   margin-bottom: 1rem;
 }
 .container:hover{
    border: none;
@@ -89,14 +88,14 @@ h1{
    font-size: 15px;
    color: white;
    background: rgb(7, 20, 32);
-   margin-top: 2rem;
+   margin-top: 1rem;
    outline: none;
 }
 .btn:hover{
    border: 1px solid white;
 }
 .footer{
-   position: absolute;
+   position: fixed;
    top: 97%;
    left: 50%;
    transform: translate(-50%, -50%);
@@ -119,6 +118,9 @@ h1{
    }
 }
 @media (max-width: 750px){
+   .body{
+      margin: 20% 0 0;
+   }
    .header{
       left: 52%;
    }
@@ -141,6 +143,9 @@ h1{
    }
 }
 @media (max-width: 550px){
+   .body{
+      margin: 35% 0 0 0;
+   }
    .header{
       left: 45%;
    }
