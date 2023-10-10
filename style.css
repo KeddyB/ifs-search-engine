@@ -45,7 +45,7 @@ h1{
 h3{
   margin-top: 2rem;
 }
-.container{
+.container, .gcse-search{
    display: inline-block;
    justify-content: space-between;
    background: transparent;
