@@ -55,7 +55,7 @@ h3{
    height: 3.2rem;
    margin-bottom: 1rem;
 }
-.container:hover:focus:active{
+.container:hover:focus{
    border: none;
    box-shadow: 0 0 1rem white;
    transition: .5 ease-in-out;
