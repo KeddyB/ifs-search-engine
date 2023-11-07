@@ -61,6 +61,12 @@ h3{
    transition: .5 ease-in-out;
    background: rgb(50, 60, 82);
 }
+.container:focus{
+   border: none;
+   box-shadow: 0 0 1rem white;
+   transition: .5 ease-in-out;
+   background: rgb(50, 60, 82);
+}
 .text{
    position: relative;
    height: 49px;
